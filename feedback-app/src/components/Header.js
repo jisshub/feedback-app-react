@@ -1,11 +1,18 @@
 import React from 'react'
 
-function Header({text}) {
+function Header({text, bgColor, textColor}) {
+  const headerStyles = {
+    backgroundColor: bgColor,
+    color: textColor
+  }
   return (
-    <div>
+    <header style={headerStyles}
+      >
+      <div className='container'>
         <h1>{text}</h1>
-    </div>
-  )
+      </div>
+    </header>
+  ) 
 }
 
 export default Header
