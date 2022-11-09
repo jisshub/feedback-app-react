@@ -27,3 +27,4 @@ FeedbackItem.propTypes={
 }
 
 export default FeedbackItem
+

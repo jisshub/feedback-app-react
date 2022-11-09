@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 import FeedbackItem from './components/FeedbackItem'
 import FeedbackData from './data/FeedbackData'
 import FeedbackList from './components/FeedbackList'
+import FeedbackStats from './components/FeedbackStats'
 
 export default function App() {
   const [feedback, setFeedback] = useState(FeedbackData)
@@ -18,6 +19,7 @@ export default function App() {
         <div className='container'> 
             {/* <h2>Hello World</h2> */}
         </div>
+        <FeedbackStats feedback={feedback} />
         <FeedbackList feedback={feedback} handleDelete={deleteFeedback} />
     </>
   )
